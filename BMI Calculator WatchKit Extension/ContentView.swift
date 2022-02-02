@@ -20,7 +20,7 @@ func condition(bmi: Double) -> String {
 struct ContentView: View {
     
     @State private var heightSlider: Double = 1.50
-    @State private var weightSlider: Double = 70
+    @State private var weightSlider: Double = 70.0
     @State private var isEditing = false
         
     var body: some View {
@@ -39,22 +39,14 @@ struct ContentView: View {
             //Height
             VStack {
                 Text("Height: \(height) m")
-                Slider(
-                    value: $heightSlider,
-                    in: 0.00...2.50,
-                    step: 0.01
-                ).accentColor(.green)
+                Slider(value: $heightSlider, in: 0...2.50, step: 0.02).accentColor(.green)
             }
             Divider().colorInvert()
             
             //Weight
             VStack{
                 Text("Weight: \(weight) kg")
-                Slider(
-                    value: $weightSlider,
-                    in: 0...150,
-                    step: 1
-                ).accentColor(.green)
+                Slider(value: $weightSlider, in: 0...100.0, step: 1.00).accentColor(.green)
             }
             Divider().colorInvert()
             

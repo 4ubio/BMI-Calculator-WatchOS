@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F08184D427A9AFF300CC1309 /* BMI Calculator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F08184D327A9AFF300CC1309 /* BMI Calculator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F08184D427A9AFF300CC1309 /* BMI Calculator.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F08184D327A9AFF300CC1309 /* BMI Calculator.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F08184D927A9AFF400CC1309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08184D827A9AFF400CC1309 /* Assets.xcassets */; };
 		F08184DF27A9AFF400CC1309 /* BMI Calculator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F08184DE27A9AFF400CC1309 /* BMI Calculator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F08184E427A9AFF400CC1309 /* BMI_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08184E327A9AFF400CC1309 /* BMI_CalculatorApp.swift */; };
@@ -54,7 +54,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F08184D427A9AFF300CC1309 /* BMI Calculator WatchKit App.app in Embed Watch Content */,
+				F08184D427A9AFF300CC1309 /* BMI Calculator.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 
 /* Begin PBXFileReference section */
 		F08184CF27A9AFF300CC1309 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F08184D327A9AFF300CC1309 /* BMI Calculator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08184D327A9AFF300CC1309 /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08184D827A9AFF400CC1309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08184DE27A9AFF400CC1309 /* BMI Calculator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BMI Calculator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08184E327A9AFF400CC1309 /* BMI_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorApp.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F08184CF27A9AFF300CC1309 /* BMI Calculator.app */,
-				F08184D327A9AFF300CC1309 /* BMI Calculator WatchKit App.app */,
+				F08184D327A9AFF300CC1309 /* BMI Calculator.app */,
 				F08184DE27A9AFF400CC1309 /* BMI Calculator WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -173,7 +173,7 @@
 			);
 			name = "BMI Calculator WatchKit App";
 			productName = "BMI Calculator WatchKit App";
-			productReference = F08184D327A9AFF300CC1309 /* BMI Calculator WatchKit App.app */;
+			productReference = F08184D327A9AFF300CC1309 /* BMI Calculator.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		F08184DD27A9AFF400CC1309 /* BMI Calculator WatchKit Extension */ = {
@@ -415,8 +415,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMI Calculator WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = BMI_Calculator_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,8 +447,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMI Calculator WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = BMI_Calculator_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,11 +479,10 @@
 				DEVELOPMENT_TEAM = B2N93W9B24;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = BMI_Calculator_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianrubioquiroz.BMI-Calculator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BMI Calculator";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -504,11 +503,10 @@
 				DEVELOPMENT_TEAM = B2N93W9B24;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = BMI_Calculator_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "BMI Calculator WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianrubioquiroz.BMI-Calculator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BMI Calculator";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
